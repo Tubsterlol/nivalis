@@ -1,0 +1,129 @@
+{
+"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+"logo": {
+"padding": {
+"top": 2,
+"left": 2
+},
+"color": {
+"1": "#b57bee",
+"2": "#392d69"
+}
+},
+"display": {
+"color": {
+"title": "cyan"
+},
+"hideCursor": false,
+"separator": " : "
+},
+"modules": [
+"title",
+"separator",
+{
+"type": "host",
+"keyColor": "#b57bee",
+"key": " PC"
+},
+{
+"type": "board",
+"keyColor": "#b57bee",
+"key": "  ├"
+},
+{
+"type": "CPU",
+"keyColor": "#b57bee",
+"key": "  ├"
+},
+{
+"type": "gpu",
+"keyColor": "#b57bee",
+"detectionMethod": "vulkan",
+"key": "  ├﬙"
+},
+{
+"type": "display",
+"keyColor": "#b57bee",
+"key": "  ├"
+},
+{
+"type": "memory",
+"keyColor": "#b57bee",
+"key": "  ╰"
+},
+"break",
+{
+"type": "os",
+"keyColor": "#7855ad",
+"key": " OS"
+},
+{
+"type": "kernel",
+"keyColor": "#7855ad",
+"key": "  ├"
+},
+{
+"type": "lm",
+"keyColor": "#7855ad",
+"key": "  ├󰍂"
+},
+{
+"type": "shell",
+"keyColor": "#7855ad",
+"key": "  ├"
+},
+{
+"type": "terminal",
+"keyColor": "#7855ad",
+"key": "  ├"
+},
+{
+"type": "TerminalFont",
+"keyColor": "#7855ad",
+"key": "  ├"
+},
+{
+"type": "Packages",
+"keyColor": "#7855ad",
+"key": "  ╰"
+},
+"break",
+{
+"type": "DE",
+"keyColor": "#392d69",
+"key": " DE"
+},
+{
+"type": "WM",
+"keyColor": "#392d69",
+"key": "  ├"
+},
+{
+"type": "WMTheme",
+"keyColor": "#392d69",
+"key": "  ├"
+},
+{
+"type": "Theme",
+"keyColor": "#392d69",
+"key": "  ├"
+},
+{
+"type": "Icons",
+"keyColor": "#392d69",
+"key": "  ├"
+},
+{
+"type": "Font",
+"keyColor": "#392d69",
+"key": "  ├"
+},
+{
+"type": "Cursor",
+"keyColor": "#392d69",
+"key": "  ╰󰇀"
+},
+"break",
+
+]
+}

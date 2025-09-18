@@ -1,0 +1,120 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["clock", "custom/sep", "hyprland/window","custom/sep", "custom/spotify"],
+
+  "modules-center": ["hyprland/workspaces"],
+
+  "modules-right": [
+    "pulseaudio",
+    "custom/sep",
+    "backlight",
+    "custom/sep",
+    "battery", 
+//    "custom/battery",
+    "custom/sep",
+    "network",
+    "custom/docker",
+    "custom/sep",
+    "tray",
+    "bluetooth"
+  ],
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "persistent-workspaces": {
+	    "*": 5 
+    }
+  },
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 10
+  },
+
+  "custom/spotify": {
+    "format": "   {}",
+    "escape": true,
+    "interval": 6,
+    "tooltip": false,
+    "exec": "playerctl --player=spotify metadata --format='{{ artist }} - {{ title }}'",
+    "on-click": "playerctl play-pause",
+    "max-length": 50
+  },
+
+  "custom/sep": {
+    "format": " | ",
+    "interval": "0",
+    "tooltip": false
+  },
+
+  "clock": {
+    "timezone": "Asia/Kolkata",
+    "tooltip": false	
+  },
+
+  "network": {
+    "format-wifi": "{essid}",
+    "format-ethernet": "󰈀 {ifname}",
+    "format-disconnected": "󰤠  ",
+    "interval": 5,
+    "tooltip": false
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "  Muted",
+    "format-icons": {
+      "default": ["", "", " "]
+    },
+    "on-click": "pavucontrol"
+  },
+
+  "backlight": {
+    "format": "{icon} {percent}%",
+    "format-icons": ["󰃞", "󰃟", "󰃠"]
+  },
+
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "on-click": "~/.config/waybar/scripts/toggle-saver.sh",
+    "format-charging": "󰂄 {capacity}%",
+    "format-icons": ["󰁺", "󰁼", "󰁾", "󰂀", "󰂂", "󰁹"],
+  },
+
+//  "custom/battery": {
+//    "format": "{}",
+//    "format-charging": "󰂄 {capacity}%",
+//    "interval": 10,
+//    "return-type": "json",
+//    "exec": "~/.config/waybar/scripts/battery-custom.sh",
+//    "on-click": "~/.config/waybar/scripts/toggle-saver.sh"
+  },
+
+  "bluetooth": {
+    "format": "󰂯 {status}",
+    "format-disabled": "󰂲 Off",
+    "format-connected": "󰂯 {device_alias}",
+    "interval": 10,
+    "tooltip": false
+  },
+
+  "custom/power": {
+    "tooltip": false,
+    "on-click": "wlogout &",
+    "format": "⏻"
+  },
+
+  "custom/docker": {
+    "format": "{}",
+    "return-type": "json",
+    "interval": 10,
+    "exec": "$(pwd)/scripts/docker-stats/docker-stats",
+    "tooltip": true
+  },
+
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 50
+  }
+}
