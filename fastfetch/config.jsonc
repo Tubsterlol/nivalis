@@ -6,13 +6,13 @@
 "left": 2
 },
 "color": {
-"1": "#b57bee",
-"2": "#392d69"
+"1": "#e9f1f6",
+"2": "#2c6cbc"
 }
 },
 "display": {
 "color": {
-"title": "cyan"
+"title": "#e9f1f6"
 },
 "hideCursor": false,
 "separator": " : "
@@ -22,105 +22,105 @@
 "separator",
 {
 "type": "host",
-"keyColor": "#b57bee",
+"keyColor": "#2c6cbc",
 "key": " PC"
 },
 {
 "type": "board",
-"keyColor": "#b57bee",
+"keyColor": "#2c6cbc",
 "key": "  ├"
 },
 {
 "type": "CPU",
-"keyColor": "#b57bee",
+"keyColor": "#2c6cbc",
 "key": "  ├"
 },
 {
 "type": "gpu",
-"keyColor": "#b57bee",
+"keyColor": "#2c6cbc",
 "detectionMethod": "vulkan",
 "key": "  ├﬙"
 },
 {
 "type": "display",
-"keyColor": "#b57bee",
+"keyColor": "#2c6cbc",
 "key": "  ├"
 },
 {
 "type": "memory",
-"keyColor": "#b57bee",
+"keyColor": "#2c6cbc",
 "key": "  ╰"
 },
 "break",
 {
 "type": "os",
-"keyColor": "#7855ad",
+"keyColor": "#2c6cbc",
 "key": " OS"
 },
 {
 "type": "kernel",
-"keyColor": "#7855ad",
+"keyColor": "#2c6cbc",
 "key": "  ├"
 },
 {
 "type": "lm",
-"keyColor": "#7855ad",
+"keyColor": "#2c6cbc",
 "key": "  ├󰍂"
 },
 {
 "type": "shell",
-"keyColor": "#7855ad",
+"keyColor": "#2c6cbc",
 "key": "  ├"
 },
 {
 "type": "terminal",
-"keyColor": "#7855ad",
+"keyColor": "#2c6cbc",
 "key": "  ├"
 },
 {
 "type": "TerminalFont",
-"keyColor": "#7855ad",
+"keyColor": "#2c6cbc",
 "key": "  ├"
 },
 {
 "type": "Packages",
-"keyColor": "#7855ad",
+"keyColor": "#2c6cbc",
 "key": "  ╰"
 },
 "break",
 {
 "type": "DE",
-"keyColor": "#392d69",
+"keyColor": "#2c6cbc",
 "key": " DE"
 },
 {
 "type": "WM",
-"keyColor": "#392d69",
+"keyColor": "#2c6cbc",
 "key": "  ├"
 },
 {
 "type": "WMTheme",
-"keyColor": "#392d69",
+"keyColor": "#2c6cbc",
 "key": "  ├"
 },
 {
 "type": "Theme",
-"keyColor": "#392d69",
+"keyColor": "#2c6cbc",
 "key": "  ├"
 },
 {
 "type": "Icons",
-"keyColor": "#392d69",
+"keyColor": "#2c6cbc",
 "key": "  ├"
 },
 {
 "type": "Font",
-"keyColor": "#392d69",
+"keyColor": "#2c6cbc",
 "key": "  ├"
 },
 {
 "type": "Cursor",
-"keyColor": "#392d69",
+"keyColor": "#2c6cbc",
 "key": "  ╰󰇀"
 },
 "break",

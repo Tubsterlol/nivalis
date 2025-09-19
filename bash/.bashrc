@@ -1,0 +1,16 @@
+# Colors
+USER_COLOR='\[\e[38;2;233;241;246m\]'  # #e9f1f6
+HOST_COLOR='\[\e[38;2;44;108;188m\]'    # #2c6cbc
+RESET='\[\e[0m\]'
+
+# PS1: [ user @ host ] (stone grey path)
+PS1='[ '"$USER_COLOR"'\u'"$RESET"' @ '"$HOST_COLOR"'\h'"$RESET"' ] ('"$STONE_GREY"'\w'"$RESET"') >> '
+
+# Makes fastfetch not work in Nvim or Tmux terminal
+if [ -z "$TMUX" ] && [ -z "$NVIM" ] && [ -z "$NVIM_LISTEN_ADDRESS" ]; then
+  fastfetch
+fi
+
+# Lazy ass user not wanting to type directory paths
+export c="Documents/College"
+
