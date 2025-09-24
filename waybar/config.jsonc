@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "modules-left": ["clock", "custom/sep", "hyprland/window","custom/sep", "custom/spotify"],
+  "modules-left": ["clock","custom/sep", "custom/spotify"],
 
   "modules-center": ["hyprland/workspaces"],
 
