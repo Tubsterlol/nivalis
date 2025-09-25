@@ -7,3 +7,7 @@ ArchLinux/Hyprland Dotfiles.
 ---
 
 ![Alacritty/Fastfetch](assets/2.png)
+
+---
+
+![Fastfetch](assets/3.png)
