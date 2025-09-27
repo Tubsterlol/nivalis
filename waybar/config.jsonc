@@ -10,7 +10,7 @@
     "custom/sep",
     "backlight",
     "custom/sep",
-    "battery", 
+		"battery",
 //    "custom/battery",
     "custom/sep",
     "network",
@@ -23,7 +23,7 @@
   "hyprland/workspaces": {
     "format": "{name}",
     "persistent-workspaces": {
-	    "*": 5 
+      "*": 5 
     }
   },
 
@@ -33,13 +33,16 @@
   },
 
   "custom/spotify": {
-    "format": "   {}",
+    "format": "  {}",
     "escape": true,
-    "interval": 6,
+    "interval": 4,
     "tooltip": false,
     "exec": "playerctl --player=spotify metadata --format='{{ artist }} - {{ title }}'",
-    "on-click": "playerctl play-pause",
-    "max-length": 50
+    "max-length": 40,
+    "on-click": "playerctl --player=spotify play-pause 2>/dev/null",
+		"smooth-scrolling-threshold": 10,
+		"on-scroll-up": "playerctl -p spotify previous",
+		"on-scroll-down": "playerctl -p spotify next"
   },
 
   "custom/sep": {
@@ -49,8 +52,10 @@
   },
 
   "clock": {
+		"interval": 60,
+    "format": "{:%d-%m-%y / %I:%M %p}",
     "timezone": "Asia/Kolkata",
-    "tooltip": false	
+    "tooltip": false 
   },
 
   "network": {
@@ -79,17 +84,15 @@
     "format": "{icon} {capacity}%",
     "on-click": "~/.config/waybar/scripts/toggle-saver.sh",
     "format-charging": "󰂄 {capacity}%",
-    "format-icons": ["󰁺", "󰁼", "󰁾", "󰂀", "󰂂", "󰁹"],
+    "format-icons": ["󰁺", "󰁼", "󰁾", "󰂀", "󰂂", "󰁹"]
   },
-
 //  "custom/battery": {
-//    "format": "{}",
-//    "format-charging": "󰂄 {capacity}%",
+//    "format": "{text}",
+//		"return-type": "json",
 //    "interval": 10,
-//    "return-type": "json",
-//    "exec": "~/.config/waybar/scripts/battery-custom.sh",
+//    "exec": "~/.config/waybar/scripts/battery_status.sh",
 //    "on-click": "~/.config/waybar/scripts/toggle-saver.sh"
-  },
+//  },
 
   "bluetooth": {
     "format": "󰂯 {status}",
@@ -109,7 +112,7 @@
     "format": "{}",
     "return-type": "json",
     "interval": 10,
-    "exec": "$(pwd)/scripts/docker-stats/docker-stats",
+    "exec": "$()/scripts/docker-stats/docker-stats",
     "tooltip": true
   },
 

@@ -52,6 +52,8 @@
 #window,
 #custom-separator,
 #custom-spotify,
+#custom-battery.normal,
+#custom-battery.power-saver,
 #clock,
 #battery,
 #pulseaudio,
@@ -104,3 +106,10 @@
   color: #FFCFA8;
 }
 
+#custom-battery.normal {
+	color: #FEFEFE;
+}
+
+#custom-battery.power-saver {
+	color: #2c6cbc;
+}
