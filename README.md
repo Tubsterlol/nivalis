@@ -15,6 +15,7 @@ ArchLinux/Hyprland Dotfiles.
     <li>spotify</li>
     <li>vim</li>
     <li>neovim</li>
+    <li>network-manager-applet</li>
   </ul>
 </details>
 
